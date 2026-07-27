@@ -1,4 +1,4 @@
-# AMD Adrenalin Profile Viewer
+# AMD Adrenalin Profile Viewer (APV)
 
 A compact, portable Windows utility for viewing, comparing, and organizing
 exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
@@ -10,9 +10,6 @@ exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
 
 - Open individual XML profiles, multiple files, or an entire folder.
 - Drag and drop XML files or folders into the application.
-- Decode power limit, maximum GPU-frequency offset, voltage offset, stored
-  memory clock, calculated effective memory clock, memory timings, fan mode,
-  and best-effort Zero RPM status.
 - Compare two loaded profiles with semantic highlighting:
   - lower values are shown in a subtle green tone;
   - higher values are shown in a subtle red tone;
@@ -89,11 +86,12 @@ On first launch, the application creates these folders beside the executable:
 ```text
 data
 ├─ settings\session.json
-├─ profile-metadata├─ logs\crash.log
+├─ profile-metadata
+├─ logs\crash.log
 ├─ logs\session.log
 └─ exports
-profiles```
-
+profiles
+```
 Application settings, notes, and logs are not intentionally written to
 AppData, LocalAppData, ProgramData, Documents, or the Windows registry.
 
