@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Adrenalin Profile Viewer",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/AdrenalinProfileViewer/bin/Debug/net8.0-windows/AdrenalinProfileViewer.exe",
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false
+    }
+  ]
+}

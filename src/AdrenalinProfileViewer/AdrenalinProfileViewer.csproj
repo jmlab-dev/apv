@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AdrenalinProfileViewer</RootNamespace>
+    <AssemblyName>AdrenalinProfileViewer</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationDefaultFont>Segoe UI, 9pt</ApplicationDefaultFont>
+    <Version>1.1.13</Version>
+    <FileVersion>1.1.13.0</FileVersion>
+    <AssemblyVersion>1.1.13.0</AssemblyVersion>
+    <Product>AMD Adrenalin Profile Viewer</Product>
+    <Description>View, compare and organize exported AMD Adrenalin tuning profiles.</Description>
+    <Copyright>designed by jmlab_dev</Copyright>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\RadeonGraphicsLogo.png" LogicalName="AdrenalinProfileViewer.Assets.RadeonGraphicsLogo.png" />
+  </ItemGroup>
+</Project>

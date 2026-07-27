@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/AdrenalinProfileViewer/AdrenalinProfileViewer.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publish single EXE win-x64",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/src/AdrenalinProfileViewer/AdrenalinProfileViewer.csproj",
+        "-c", "Release",
+        "-r", "win-x64",
+        "--self-contained", "true",
+        "-p:PublishSingleFile=true",
+        "-p:IncludeNativeLibrariesForSelfExtract=true",
+        "-p:EnableCompressionInSingleFile=true",
+        "-p:PublishTrimmed=false",
+        "-p:DebugType=None",
+        "-p:DebugSymbols=false",
+        "-o", "${workspaceFolder}/dist/AdrenalinProfileViewer-single-exe"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "publish portable folder win-x64",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/src/AdrenalinProfileViewer/AdrenalinProfileViewer.csproj",
+        "-c", "Release",
+        "-r", "win-x64",
+        "--self-contained", "true",
+        "-p:PublishSingleFile=false",
+        "-p:PublishTrimmed=false",
+        "-p:DebugType=None",
+        "-p:DebugSymbols=false",
+        "-o", "${workspaceFolder}/dist/AdrenalinProfileViewer-portable-folder"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

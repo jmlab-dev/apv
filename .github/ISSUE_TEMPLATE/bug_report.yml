@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible application problem
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve AMD Adrenalin Profile Viewer.
+  - type: input
+    id: version
+    attributes:
+      label: Application version
+      placeholder: 1.1.13
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and display scaling
+      placeholder: Windows 11 25H2, 120%
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Launch the application
+        2. Open ...
+        3. Select ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log or screenshot
+      description: Remove personal file paths or other private information before posting.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I tested the latest release.
+          required: true
+        - label: I removed private information from logs and screenshots.
+          required: true

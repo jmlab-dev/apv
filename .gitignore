@@ -1,0 +1,36 @@
+# .NET build output
+**/bin/
+**/obj/
+dist/
+release-assets/
+
+# Portable application-created data
+/data/
+/profiles/
+portable-data/
+
+# Visual Studio / VS Code user-specific state
+.vs/
+*.user
+*.suo
+.vscode/*.user
+.vscode/settings.json
+
+# Logs, crash dumps and temporary files
+*.log
+*.dmp
+*.tmp
+*.temp
+*.bak
+*.old
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# NuGet and test output
+*.nupkg
+*.snupkg
+TestResults/
+coverage/

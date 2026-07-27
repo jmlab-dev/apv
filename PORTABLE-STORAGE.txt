@@ -1,0 +1,18 @@
+AMD ADRENALIN PROFILE VIEWER 1.1.13 — PORTABLE STORAGE
+=====================================================
+
+All application-owned persistent data is stored beside the running executable:
+
+  data\settings\session.json
+  data\profile-metadata\
+  data\logs\crash.log
+  data\logs\session.log
+  data\exports\
+  profiles\
+
+No application settings, notes, or logs are intentionally written to AppData,
+LocalAppData, Documents, ProgramData, or the Windows registry.
+
+The self-contained single-EXE .NET runtime may use Windows %TEMP%\.net for its
+private extraction cache. Use build-portable-folder.bat when zero single-file
+runtime extraction is required.
