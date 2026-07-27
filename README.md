@@ -4,7 +4,7 @@ A compact, portable Windows utility for viewing, comparing, and organizing
 exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
 
 > Current version: **1.1.13**  
-> Designed by **jmlab_dev**
+> Designed by **jmlab-dev**
 
 ## Highlights
 
