@@ -2,9 +2,6 @@
 A compact, portable Windows utility for viewing, comparing, and organizing
 exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
 
-> Current version: **1.1.13**  
-> Designed by **jmlab-dev**
-
 ## Highlights
 - Drag and drop XML files or folders into the application.
 - Compare two loaded profiles with semantic highlighting:
@@ -18,11 +15,9 @@ exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
 ## Memory-clock display
 
 For the tested RDNA 4 profile format, the application displays:
-
 ```text
 Calculated effective profile clock = stored XML value - 14 MHz
 ```
-
 Example: `2728 MHz stored -> 2714 MHz calculated effective`.
 
 This is the observed Adrenalin profile conversion used by the application; it
