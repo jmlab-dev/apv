@@ -87,7 +87,8 @@ build-portable-folder.bat
 On first launch, the application creates these folders beside the executable:
 
 ```text
-data├─ settings\session.json
+data
+├─ settings\session.json
 ├─ profile-metadata├─ logs\crash.log
 ├─ logs\session.log
 └─ exports
@@ -99,7 +100,6 @@ AppData, LocalAppData, ProgramData, Documents, or the Windows registry.
 A self-contained .NET single-file application may use `%TEMP%\.net` as a
 private runtime extraction cache before the managed application starts. The
 application's own persistent data is not stored there.
-
 ```
 
 ## Feature-ID decoding
