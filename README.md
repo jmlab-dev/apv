@@ -100,18 +100,6 @@ A self-contained .NET single-file application may use `%TEMP%\.net` as a
 private runtime extraction cache before the managed application starts. The
 application's own persistent data is not stored there.
 
-## Automatic GitHub releases
-
-This repository includes GitHub Actions workflows:
-
-- **Build** validates pushes and pull requests on a Windows runner.
-- **Release** builds the self-contained executable, creates its SHA-256 file,
-  and publishes both when a tag such as `v1.1.13` is pushed.
-
-After the repository is online, creating a release is simply:
-
-```powershell
-.\CREATE-RELEASE.ps1
 ```
 
 ## Feature-ID decoding
