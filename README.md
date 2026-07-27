@@ -82,7 +82,6 @@ build-portable-folder.bat
 ## Portable storage
 
 On first launch, the application creates these folders beside the executable:
-
 ```text
 data
 ├─ settings\session.json
@@ -113,12 +112,10 @@ application's own persistent data is not stored there.
 | Feature 18 | Best-effort Zero RPM decode |
 ```
 ## Disclaimer
-
 This is an independent community utility and is not affiliated with or
 endorsed by AMD. It reads exported XML files; it does not apply tuning settings
 or modify AMD Software configuration. See [NOTICE.md](NOTICE.md) for trademark
 and branding information.
 
 ## License
-
-Source code is released under the [MIT License].
+Source code is released under the MIT License.
