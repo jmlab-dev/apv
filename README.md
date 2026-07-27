@@ -1,5 +1,4 @@
 # AMD Adrenalin Profile Viewer (APV)
-
 A compact, portable Windows utility for viewing, comparing, and organizing
 exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
 
@@ -7,13 +6,8 @@ exported **AMD Software: Adrenalin Edition** GPU tuning profiles (`.xml`).
 > Designed by **jmlab-dev**
 
 ## Highlights
-
-- Open individual XML profiles, multiple files, or an entire folder.
 - Drag and drop XML files or folders into the application.
 - Compare two loaded profiles with semantic highlighting:
-  - lower values are shown in a subtle green tone;
-  - higher values are shown in a subtle red tone;
-  - more-negative offsets are treated as lower values.
 - Inspect every raw feature/state and the original XML.
 - Save profile names and notes without modifying the source XML.
 - Export loaded profiles to CSV.
@@ -54,24 +48,11 @@ self-contained and does not require a separate .NET installation.
 - .NET 8 SDK x64
 - Visual Studio Code or Visual Studio
 
-Verify the SDK:
-
-```powershell
-dotnet --info
-```
-
 Build the self-contained single executable:
 
 ```text
 build-single-exe.bat
 ```
-
-Output:
-
-```text
-dist\AdrenalinProfileViewer-single-exe\AdrenalinProfileViewer.exe
-```
-
 Alternatively, build the self-contained folder variant that avoids single-file
 runtime extraction:
 
@@ -97,20 +78,7 @@ AppData, LocalAppData, ProgramData, Documents, or the Windows registry.
 A self-contained .NET single-file application may use `%TEMP%\.net` as a
 private runtime extraction cache before the managed application starts. The
 application's own persistent data is not stored there.
-```
-## Feature-ID decoding
 
-| XML feature/state | Displayed as |
-|---|---|
-| Feature 3, state 0 | Power limit (%) |
-| Feature 26, state 4 | Maximum GPU-frequency offset (MHz) |
-| Feature 12, state 0 | Global voltage offset (mV) |
-| Feature 5, state 0 | Memory clock stored in XML (MHz) |
-| Calculated field | Effective profile clock = stored XML - 14 MHz |
-| Feature 17, state 0, value 1 | Fast memory timings |
-| Feature 22 | Custom fan-curve indicator |
-| Feature 18 | Best-effort Zero RPM decode |
-```
 ## Disclaimer
 This is an independent community utility and is not affiliated with or
 endorsed by AMD. It reads exported XML files; it does not apply tuning settings
