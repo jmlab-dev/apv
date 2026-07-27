@@ -99,7 +99,6 @@ A self-contained .NET single-file application may use `%TEMP%\.net` as a
 private runtime extraction cache before the managed application starts. The
 application's own persistent data is not stored there.
 ```
-
 ## Feature-ID decoding
 
 | XML feature/state | Displayed as |
@@ -112,7 +111,7 @@ application's own persistent data is not stored there.
 | Feature 17, state 0, value 1 | Fast memory timings |
 | Feature 22 | Custom fan-curve indicator |
 | Feature 18 | Best-effort Zero RPM decode |
-
+```
 ## Disclaimer
 
 This is an independent community utility and is not affiliated with or
@@ -122,4 +121,4 @@ and branding information.
 
 ## License
 
-Source code is released under the [MIT License](LICENSE).
+Source code is released under the [MIT License].
